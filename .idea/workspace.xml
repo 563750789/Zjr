@@ -83,8 +83,8 @@
       <file leaf-file-name="ConferenceSchedulerApplication.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/thounghtworks/zjr_mark/ConferenceSchedulerApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="28" column="64" lean-forward="false" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
+            <state relative-caret-position="432">
+              <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -625,7 +625,7 @@
       <updated>1552282807835</updated>
       <workItem from="1552282809292" duration="30094000" />
       <workItem from="1552353387792" duration="36336000" />
-      <workItem from="1552449147738" duration="134000" />
+      <workItem from="1552449147738" duration="139000" />
     </task>
     <task id="LOCAL-00001" summary="secound commit">
       <created>1552449263703</created>
@@ -641,7 +641,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552449280159</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="secound commit">
+      <created>1552449285545</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552449285545</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -677,7 +684,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66564000" />
+    <option name="totallyTimeSpent" value="66569000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1102,8 +1109,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thounghtworks/zjr_mark/ConferenceSchedulerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="28" column="64" lean-forward="false" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
+        <state relative-caret-position="432">
+          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
           <folding />
         </state>
       </provider>
