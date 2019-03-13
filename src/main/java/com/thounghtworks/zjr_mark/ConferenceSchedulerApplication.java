@@ -14,7 +14,7 @@ public class ConferenceSchedulerApplication {
     public static void main(String[] args) {
 
         try {
-            //使用工具类将txt文本解析
+
             ArrayList<Talk> list = TalksParser.parse("src/main/resources/talks-list.txt");
 
             Conference c = new Conference();

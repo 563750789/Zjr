@@ -16,7 +16,6 @@ public class Conference {
 
     }
 
-    //日程排序的实现方法
     public void scheduleTalks(ArrayList<Talk> list) {
 
         while (list.size() > 0) {
@@ -49,12 +48,6 @@ public class Conference {
     public void outPut() {
 
 
-//        tracks.stream().forEach(track -> {
-//            int i = 0;
-//            i++;
-//            Printer.print("Track " + index + ":");
-//            track.outPut();
-////        });
 
         for (int i = 0; i < tracks.size(); i++) {
             int k = i + 1;

@@ -4,7 +4,7 @@ import com.thounghtworks.zjr_mark.utils.Printer;
 
 import java.time.LocalTime;
 
-//管道实体类(每日)
+
 public class Track {
 
     private Session morningSession;

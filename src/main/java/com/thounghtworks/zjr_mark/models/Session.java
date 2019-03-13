@@ -6,7 +6,7 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
-//会话实体类(上下午类)
+
 public class Session {
 
     private List<Talk> talks;

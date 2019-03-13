@@ -3,7 +3,7 @@ package com.thounghtworks.zjr_mark.models;
 
 import com.thounghtworks.zjr_mark.exception.OutOfSessionDurationError;
 
-//事件实体类
+
 public class Talk {
 
     private String title;
