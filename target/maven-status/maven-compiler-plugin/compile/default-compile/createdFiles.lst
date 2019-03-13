@@ -1,0 +1,9 @@
+com\thounghtworks\zjr_mark\exception\OutOfSessionDurationError.class
+com\thounghtworks\zjr_mark\models\Talk.class
+com\thounghtworks\zjr_mark\utils\Printer.class
+com\thounghtworks\zjr_mark\exception\ParseErrorException.class
+com\thounghtworks\zjr_mark\utils\TalksParser.class
+com\thounghtworks\zjr_mark\ConferenceSchedulerApplication.class
+com\thounghtworks\zjr_mark\models\Track.class
+com\thounghtworks\zjr_mark\models\Conference.class
+com\thounghtworks\zjr_mark\models\Session.class
