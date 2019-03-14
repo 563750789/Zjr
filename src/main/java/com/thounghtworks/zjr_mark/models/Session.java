@@ -1,11 +1,11 @@
 package com.thounghtworks.zjr_mark.models;
 
-import com.thounghtworks.zjr_mark.utils.Printer;
+import static com.thounghtworks.zjr_mark.utils.Printer.print;
 
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
-
 
 public class Session {
 
@@ -51,11 +51,14 @@ public class Session {
     }
 
     public void outPut() {
-
-        talks.stream().forEach(talk -> {
-            Printer.print(Printer.timeParser(beginTime.getHour(), beginTime.getMinute()) + talk.getTitle() + talk.getTime());
-            beginTime = beginTime.plusMinutes(talk.getDuration());
-        });
-
+        LocalTime time = beginTime;
+        for (Talk talk : talks) {
+            if (time.getHour() < 12) {
+                print(time.format(DateTimeFormatter.ofPattern("hh:mm")) + "AM" + " " + talk.getTitle() + talk.getDurationStr());
+            } else {
+                print(time.format(DateTimeFormatter.ofPattern("hh:mm")) + "PM" + " " + talk.getTitle() + talk.getDurationStr());
+            }
+            time = time.plusMinutes(talk.getDuration());
+        }
     }
 }

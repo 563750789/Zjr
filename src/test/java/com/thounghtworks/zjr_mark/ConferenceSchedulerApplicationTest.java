@@ -1,25 +1,44 @@
 package com.thounghtworks.zjr_mark;
 
+import static org.junit.jupiter.api.Assertions.*;
+
+import com.thounghtworks.zjr_mark.models.Conference;
+import com.thounghtworks.zjr_mark.models.Session;
 import com.thounghtworks.zjr_mark.models.Talk;
+import com.thounghtworks.zjr_mark.models.Track;
+import com.thounghtworks.zjr_mark.utils.Printer;
+import com.thounghtworks.zjr_mark.utils.TalksParser;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
-import org.mockito.runners.MockitoJUnitRunner;
-import java.util.ArrayList;
+import org.mockito.Mock;
+import org.powermock.api.mockito.PowerMockito;
+import org.powermock.core.classloader.annotations.PrepareForTest;
+import org.powermock.modules.junit4.PowerMockRunner;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+import java.util.ArrayList;
+import java.util.List;
 
 class ConferenceSchedulerApplicationTest {
-    //有问题
-    @Test
-    public void main() throws Exception {
 
-        ArrayList<Talk> list1 = new ArrayList<>();
-        list1.add(new Talk("a",10));
-        list1.add(new Talk("b",20));
-        list1.add(new Talk("c",30));
-        list1.add(new Talk("d",40));
-        list1.add(new Talk("e",50));
-        list1.add(new Talk("f",60));
-        list1.add(new Talk("g",70));
-        list1.add(new Talk("h",80));
+    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+
+    private List<Talk> list = TestHelper.getTalkList();
+
+    private Conference conference = new Conference();
+
+    @Test
+    public void main(){
+        conference = new Conference();
+        conference.scheduleTalks(list);
+        System.setOut(new PrintStream(outContent));
+        conference.outPut();
+        assertEquals("Track 1:" +System.lineSeparator()+
+                "09:00AM a5min" +System.lineSeparator()+
+                "09:05AM b30min" +System.lineSeparator()+
+                "09:35AM c45min" +System.lineSeparator()+
+                "10:20AM d60min" +System.lineSeparator()+
+                "12:00PM lauch"+System.lineSeparator(),outContent.toString());
     }
 }

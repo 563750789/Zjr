@@ -13,26 +13,23 @@ class TrackTest {
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
-    private Track track;
-
-    @BeforeEach
-    public void setup() {
-        track = new Track();
-        ArrayList<Talk> list = new ArrayList<>();
-        list.add(new Talk("gohome", 10));
-
-        track.getMorningSession().setTalks(list);
-        track.getAfternoonSession().setTalks(list);
+    @Test
+    public void constructionTest() {
+        Track track = new Track();
+        assertEquals(true,track.getAfternoonSession().getTalks().isEmpty());
     }
 
     @Test
     public void outPut() {
+        Track track = new Track();
+        ArrayList<Talk> list = new ArrayList<>();
+        list.add(new Talk("gohome", 10));
+        track.getMorningSession().setTalks(list);
+        track.getAfternoonSession().setTalks(list);
         System.setOut(new PrintStream(outContent));
         track.outPut();
-        assertEquals("9:00AM gohome10min" + System.lineSeparator() +
+        assertEquals("09:00AM gohome10min" + System.lineSeparator() +
                 "12:00PM lauch" + System.lineSeparator() +
-                "1:00PM gohome10min" + System.lineSeparator(), outContent.toString());
-
-
+                "01:00PM gohome10min" + System.lineSeparator(), outContent.toString());
     }
 }

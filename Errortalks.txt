@@ -1,0 +1,4 @@
+Writing Fast Tests Against Enterprise Rails 60m
+Overdoing it in Python
+Lua for 3 the Masses
+Rails for Python Developers lightttttning

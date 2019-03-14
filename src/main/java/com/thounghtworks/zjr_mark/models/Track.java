@@ -1,9 +1,8 @@
 package com.thounghtworks.zjr_mark.models;
 
-import com.thounghtworks.zjr_mark.utils.Printer;
+import static com.thounghtworks.zjr_mark.utils.Printer.print;
 
 import java.time.LocalTime;
-
 
 public class Track {
 
@@ -39,7 +38,7 @@ public class Track {
 
     public void outPut() {
         morningSession.outPut();
-        Printer.print("12:00PM lauch");
+        print("12:00PM lauch");
         afternoonSession.outPut();
     }
 }
